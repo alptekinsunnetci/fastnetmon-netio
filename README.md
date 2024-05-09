@@ -14,6 +14,8 @@ Grant the file appropriate permissions:
 
 ```bash
 chmod +x /usr/bin/fastnetmon-netio
+
+echo "{}" | sudo tee /usr/bin/output.json > /dev/null
 ```
 
 Create a systemd unit file to run it as a service and paste the following content:
