@@ -79,6 +79,11 @@ if [ "$4" = "ban" ]; then
 	exit 0
 fi
 ```
+Grant the file appropriate permissions:
+
+```bash
+chmod +x /usr/local/bin/notify_about_attack.sh
+```
 
 Edit the FastNetMon configuration file:
 
