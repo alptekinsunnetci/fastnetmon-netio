@@ -59,7 +59,7 @@ systemctl start fastnetmon-netio
 To set up FastNetMon-netIO with your router for BGP, you will need the following information:
 
 ```bash
-FastNetMon-netIO IP= Your server's IP address
+FastNetMon-netIO IP= Your server IP address
 ASN= 65090
 TCP Port= 179
 Multihop= enable
