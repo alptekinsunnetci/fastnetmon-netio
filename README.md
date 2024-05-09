@@ -70,12 +70,12 @@ Contents of `/usr/local/bin/notify_about_attack.sh`:
 #!/usr/bin/env bash
 
 if [ "$4" = "unban" ]; then
-	curl http://127.0.0.1/remove/$1
+	curl http://127.0.0.1:8179/remove/$1
 	exit 0
 fi
 
 if [ "$4" = "ban" ]; then
-	curl http://127.0.0.1/add/$1
+	curl http://127.0.0.1:8179/add/$1
 	exit 0
 fi
 ```
