@@ -1,10 +1,10 @@
-```
+
 # fastnetmon-netio
 
 ## Installation
 
 Download the relevant file and place it in an appropriate location:
-```
+
 
 ```bash
 wget https://fastnetmon.netio.com.tr/fastnetmon-netio -O /usr/bin/fastnetmon-netio
