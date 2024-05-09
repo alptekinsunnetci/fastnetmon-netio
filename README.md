@@ -25,6 +25,8 @@ nano /etc/systemd/system/fastnetmon-netio.service
 Contents of `/etc/systemd/system/fastnetmon-netio.service`:
 
 ```ini
+# /etc/systemd/system/fastnetmon-netio.service
+
 [Unit]
 Description=FastNetMon - netIO
 After=network.target
@@ -34,6 +36,7 @@ ExecStart=/usr/bin/fastnetmon-netio
 Restart=always
 User=nobody
 Group=nogroup
+WorkingDirectory=/usr/bin/
 
 [Install]
 WantedBy=multi-user.target
