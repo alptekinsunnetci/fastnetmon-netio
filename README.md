@@ -54,6 +54,43 @@ Start the service:
 systemctl start fastnetmon-netio
 ```
 
+## Using the notify_about_attack.sh File
+
+Create the notify_about_attack.sh file:
+
+```bash
+nano /usr/local/bin/notify_about_attack.sh
+```
+
+Contents of `/usr/local/bin/notify_about_attack.sh`:
+
+```ini
+#!/usr/bin/env bash
+
+if [ "$4" = "unban" ]; then
+	curl http://127.0.0.1/remove/$1
+	exit 0
+fi
+
+if [ "$4" = "ban" ]; then
+	curl http://127.0.0.1/add/$1
+	exit 0
+fi
+```
+
+Edit the FastNetMon configuration file:
+
+```bash
+nano /etc/fastnetmon.conf
+```
+
+Set the `notify_script_path` parameter as follows:
+
+```ini
+notify_script_path = /usr/local/bin/notify_about_attack.sh
+```
+
+
 ## Setting up BGP with Your Router
 
 To set up FastNetMon-netIO with your router for BGP, you will need the following information:
