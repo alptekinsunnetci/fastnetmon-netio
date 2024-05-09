@@ -65,7 +65,6 @@ TCP Port= 179
 Multihop= enable
 ```
 
-Incoming prefixes are tagged with a 666 community tag.
+Incoming prefixes are tagged with a ```666``` community tag.
 
 You can use IP Tables on your installation server. Keep TCP port 8179 closed to the outside.
-```
