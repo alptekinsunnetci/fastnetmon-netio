@@ -111,4 +111,5 @@ Multihop= enable
 
 Incoming prefixes are tagged with a ```666``` community tag.
 
+## Warning
 You can use IP Tables on your installation server. Keep TCP port 8179 closed to the outside.
