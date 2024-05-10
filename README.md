@@ -1,5 +1,5 @@
 
-# fastnetmon-netio
+# FastNetmon-netIO
 
 ## Installation
 
